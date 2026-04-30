@@ -1,7 +1,6 @@
 import sqlite3
-from config.settings import DB_PATH
 
-conn = sqlite3.connect(DB_PATH)
+conn = sqlite3.connect("anomaly_pipeline.db")
 cursor = conn.cursor()
 
 cursor.execute("""
